@@ -1,0 +1,45 @@
+
+	
+		* {
+			box-sizing: border-box;
+		}
+
+		div {
+			float: left;
+			border: 0px solid green;
+			}
+	
+		
+		.a {
+			width: 60%;
+			height: 400px;
+			background-color: red;
+			
+
+						}	
+		.e {
+			width: 40%;
+			height: 400px;
+			padding-left: 10px;
+		}
+
+		
+		
+		.b {
+			width: 100%;
+			height: 200px;
+			background-color: green;
+			
+		}
+		.c {
+			width: 100%;
+			height: 200px;
+			background-color: blue;
+			}
+
+		.f {
+			width: 100%;
+			height: 400px;
+			
+		}
+			

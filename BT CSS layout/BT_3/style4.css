@@ -1,0 +1,23 @@
+
+			* {box-sizing: border-box;
+		}
+		
+		div {
+			display: inline-block;
+			width: 33.1%;
+			height: 400px;
+			
+			}
+			.a {
+				background-color: red;
+				border-right: 7px solid white;
+			}
+			.b {
+				background-color: green;
+				border-right: 7px solid white;
+
+			}
+			.c {
+				background-color: blue;
+			}
+			
