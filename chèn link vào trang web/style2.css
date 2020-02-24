@@ -1,0 +1,12 @@
+img {width: 1000px;
+	height: 300px;
+}
+a:link {color: green;}
+
+a:hover {color: red;
+
+}	
+.active {
+	font-style: italic;
+
+}

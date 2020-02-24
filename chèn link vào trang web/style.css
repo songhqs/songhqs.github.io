@@ -1,0 +1,22 @@
+img{width: 1100px; height:500px; }
+
+p {height:600px;}
+
+a:link {
+	color: brown;
+} 
+
+
+a:visited {
+	color: red;
+
+}
+
+a:hover {
+	color: green;
+}
+a:active {
+	color: blue;}
+img:hover {
+	border-radius: 100%
+}

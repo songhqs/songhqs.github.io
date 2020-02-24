@@ -1,0 +1,32 @@
+
+			* {box-sizing: border-box;
+		}
+		
+		div {
+			display: inline-block;
+			width: 33.33%;
+			height: 400px;
+			
+			}
+			.box {}
+			.a {
+				background-color: red;
+				border-right: 8px solid white;
+			}
+			.b {
+				background-color: green;
+				border-right: 4px solid white;
+				border-left: 4px solid white;
+				
+			}
+			.c {
+				background-color: blue;
+				border-left: 4px solid white;
+
+			}
+	 		
+	 	
+	 		img {
+	 			max-width: 100%;
+	 			
+	 		}

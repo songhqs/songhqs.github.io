@@ -1,0 +1,108 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>div-span</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="about.css">
+
+		<style>
+
+			* {
+				box-sizing: border-box;
+			}
+
+			.box {
+				padding: 15px;
+				border: 2px solid yellow;
+				border-top-width: 5px;
+				float: left;
+				width: 33.333%;
+			}
+			span {
+				color: red;
+			}
+			.company {
+				border-color: brown;
+			}
+			.company span {
+				color: brown;
+			}
+			.contact {
+				border-color: #76a7fa;
+			}
+			.contact span {
+				color: #76a7fa;
+			}
+			.infor {
+				border-color: yellow;
+			}	
+			.infor span {
+				color: yellow;
+			}
+			nav{
+            background-color: #566573;
+        }
+        nav a {
+            display:inline-block;
+            padding:10px;
+            font-size:20px;
+            color:white;
+            text-decoration:none;
+        }
+        nav a:hover{
+            background-color:#333;
+        }
+			       
+		         
+		    
+		</style>
+
+	</head>
+	<body>
+	<div class="wrap">
+		<div id="banner">
+			<img src="nen2.jpg">
+		</div>
+		<nav> 
+		<a href="bt donxinviec.html">Don xin viec</a>
+		<a href="div-span.html">Trang chu</a>
+		<a href="chenanh.html">Chen Anh</a>
+		<a class="a"href="bai1.html">Bai 1</a>
+	</nav><br/>
+
+
+	<h1>Họ tên: Trần Thanh Song</h1>
+	<div id="main-content">
+		<div class="box info">
+	  		<h2>Thông tin cơ bản</h2>
+
+	  		<div>Nick name <span>Song trần</span></div>
+
+	  		<div>Giới tính <span>Nam</span></div>
+
+	  		<div>Ngày sinh <span>02/12/1969</span></div>
+		</div>
+
+		<div class="box contact">
+	  		<h2>Thông tin liên hệ</h2>
+
+	  		<div>Skype <span>Songtt</span></div>
+
+	  		<div>Gmail <span>songhqs@gmail.com</span></div>
+
+	  		<div>Di động <span>0984690058</span></div>
+		</div>
+
+		<div class="box company">
+	  		<h2>Cơ quan</h2>
+
+	  		<div>Nghề nghiệp <span> Học viên</span></div>
+
+	  		<div>Kỹ năng <span>HTML, CSS, Javascript</span></div>
+
+	  		<div>Nơi làm việc <span>Techmaster Vietnam</span></div>
+		</div>
+	</div>
+	</body>
+	</html>

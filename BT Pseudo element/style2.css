@@ -1,0 +1,11 @@
+img {width: 1000px;
+	height: 300px;
+}
+b.money::before {
+	content: "học phí  ";
+}
+	
+
+b.money::after {
+	content: " VNĐ";
+}
