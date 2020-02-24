@@ -4,7 +4,6 @@
 }
 body {
 	background-color: #E5E7E9; 
-	
 
 }
 	#benner{
@@ -14,20 +13,15 @@ body {
 				padding-left: 3px;
 				padding-right: 3px;
 				width: 100%;
-				height: 200px;
-}
-div.wrap {
-	margin-left: 66px;
-	
-
+				height: auto;
 }
 
 div.gallery {
-	display: inline-block;
-		padding: 5px;
+		display: inline-block;
+		padding: 17px;
 		border: solid 0px;
-		max-width: 25%px;
-		max-height: 200;
+		max-width: 25%;
+		max-height: 200px;
 }
 
 div.gallery:hover {
@@ -37,10 +31,5 @@ div.gallery:hover {
 		text-transform: uppercase;
 		font-size: 15px;
 	}
- .footer {
-		border: 1px solid grey;
-		border-radius: 5px;
-		width: 1200px;
-		height: 200px;
-			}
+ 
 
