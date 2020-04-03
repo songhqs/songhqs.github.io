@@ -1,0 +1,117 @@
+			<!DOCTYPE html>
+			<html>
+			<head>
+				<title>menu_jquery</title>
+				<meta charset="utf-8">
+				
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+
+				</script>
+
+			</head>
+			<style>
+				* {margin: auto;
+
+					
+					padding: 0;}
+
+					ul {list-style-type: none;}
+					.menu {
+						margin-top: 40px;
+						margin-left: 220px;
+
+					}
+
+					.menu a { 
+
+						text-decoration: none; 
+						color: #fff;
+						font-family: tahoma;						
+					}
+					.menu li {
+						float: left;
+						width: 150px;
+						line-height: 1.5em;
+						position: relative;
+						text-align: center;
+						background-color: #5D6D7E;
+						padding: 10px;
+					}
+
+					.menu ul {
+						position: absolute;
+						top: 42px; 
+						left: 0;
+						display: none;
+					}
+					.menu li:hover {
+						background: #ABB2B9;
+						cursor: pointer;
+					}
+					.menu ul ul {
+						left: 170px;
+						top: 0px;
+
+					}
+				</style>
+				<body>
+					<div class="3w-content">
+						<ul class="menu">
+							<li><a href="#">about</a>
+								<ul>
+									<li><a href="#">Help</a></li>
+									<li><a href="#">Information</a></li>
+								</ul>
+							</li>
+							<li><a href="#">tutorial</a>
+								<ul>
+									<li><a href="#">Kiến thức</a>
+										<ul>
+											<li><a href="#"> Word</li>
+												<li><a href="#">Excel</a> </li>
+												<li><a href="#">Photoshop</a></li>
+												<li><a href="#">Coreldraw</a> </li>	
+											</ul>	
+										</li>
+										<li><a href="#">Đồ hoạ</a>
+											<ul>
+												<li><a href="#">Photoshop</a></li>
+												<li><a href="#">Ilutrator</a></li>
+												<li><a href="#">Coreldraw</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Lập trình</a>
+											<ul>
+												<li><a href="#">thiết kế Web</a> </li>
+												<li><a href="#">HTML</a> </li>
+												<li><a href="#">CSS </a> </li>
+												<li><a href="#">Javascript</a> </li>
+											</ul>
+										</li>				
+									</ul>
+								</li>	
+								<li><a href="#">contact</a>
+									<ul>
+										<li><a href="#"></a>lorem2 ipsum</li>
+										<li><a href="#"></a>Dolores volupatius</li>
+										<li><a href="#"></a>Quae, eius</li>
+										<li><a href="#"></a>Quas, Vulustas</li>
+										<li><a href="#"></a>Assumenda, sint</li>
+									</ul>
+								</li>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">login</a></li>	
+							</ul>
+						</div>
+						<script>
+							$(document).ready(function(){
+								$(".menu li").hover(function() {
+									$(this).find("ul:first").slideDown(500);
+								}, function() {
+									$(this).find("ul:first").hide(300);
+								});
+							});
+
+						</script>
+					</body>
+					</html>
