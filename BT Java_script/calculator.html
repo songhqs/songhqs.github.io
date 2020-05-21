@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 18px;
+            color: rgb(20, 17, 3);
+            padding: 100px 100px;
+
+        }
+
+        .clear_all {
+            clear: both;
+        }
+
+        .khung {
+            margin: 0px;
+            padding: 10px;
+            width: 285px;
+            border: 2px solid #333333;
+            outline: none;
+
+        }
+
+        #ketqua {
+            margin: 10px 0px 15px 12px;
+            padding: 10px;
+            width: 265px;
+            text-align: right;
+            outline: none;
+            border: solid 1px #EAECEE;
+
+        }
+
+        .button {
+            margin: 0px 0px 15px 10px;
+            padding: 10px 10px 10px 10px;
+            float: left;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #17202A;
+            color: #FDFEFE;
+            width: 40px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="khung">
+
+        <input type="text" id="ketqua" value=0 />
+
+        <div class="clear_all"></div>
+        <div class="button" first onClick="clickButton(this)">CE</div>
+        <div class="button" onClick="clickButton(this)">&lt;</div>
+        <div class="button" onClick="clickButton(this)">%</div>
+        <div class="button" onClick="clickButton(this)">+</div>
+
+        <div class="clear_all"></div>
+        <div class="button first" onClick="clickButton(this)">7</div>
+        <div class="button" onClick="clickButton(this)">8</div>
+        <div class="button" onClick="clickButton(this)">9</div>
+        <div class="button" onClick="clickButton(this)">-</div>
+
+        <div class="clear_all"></div>
+
+        <div class="button first" onClick="clickButton(this)">4</div>
+        <div class="button" onClick="clickButton(this)">5</div>
+        <div class="button" onClick="clickButton(this)">6</div>
+        <div class="button" onClick="clickButton(this)">x</div>
+
+        <div class="clear_all"></div>
+
+        <div class="button first" onClick="clickButton(this)">1</div>
+        <div class="button" onClick="clickButton(this)">2</div>
+        <div class="button" onClick="clickButton(this)">3</div>
+        <div class="button" onClick="clickButton(this)">/</div>
+
+
+
+        <div class="clear_all"></div>
+        <div class="button first">0</div>
+        <div class="button">+-</div>
+        <div class="button">.</div>
+        <div class="button">=</div>
+
+
+        <div class="clear_all"></div>
+      <script src="js/javascript.js"></script>
+
+
+        <script>
+            var doi_dau = true
+            // Số phép tính ưu tiên tìm thấy
+            var uu_tien = 0;
+            // Mảng ghi nhớ các số hạng:
+            var mang_so_index = 0;
+            var mang_so = new Array();
+            //Mảng ghi nhớ phép tính:
+            var mang_pt_index = 0;
+            var mang_pt = new Array();
+            //Nội dung đang có:
+            var str_ketqua = "";
+            //phim mói:
+            var phim_moi = "";
+
+            //CAI DAT SỰ KIỆN.
+            function ClickButton(obj) {
+                //chuỗi hiện tại của kết quả:
+                if (str_ketqua = "" && phim_moi == "") {
+                    str_ketqua = ketqua.value;
+                }
+                if (str_ketqua == '0') {
+                    str_ketqua == "";
+                }
+                //HTML của phím bấm: 
+                var type = obj.innerHTML;
+
+                //nhóm số:
+                if (type == '0' ||
+                    type == '1' ||
+                    type == '2' ||
+                    type == '3' ||
+                    type == '4' ||
+                    type == '5' ||
+                    type == '6' ||
+                    type == '7' ||
+                    type == '8' ||
+                    type == '9' ||
+                    type == '+/-' ||
+                    type == '.' ||) {
+                    //đổi dấu
+                    if (type == '+/_') {
+                        //đổi từ - thành +
+                        if (doi_dau) {
+                            doi_dau == false;
+                            phim_moi = phim_moi.substring(1);
+
+
+                        }
+                        //đổi + thành -
+                        else {
+                            doi_dau == true;
+                            phim_moi = '-' + phim_moi;
+
+                        }
+                    }
+                    //Đổi số:
+                    else {
+                        phim_moi += type;
+                    }
+                    //Thay đổi hiện thị:
+                    ketqua.value = str_ketqua + phim_moi;
+                }
+                //Nhóm phép tính (+ - * /)
+                else if {
+                    type == '+' ||
+                    type == '-' ||
+                    type == '*' ||
+                    type == '/' ||) {
+                    //trước đó có bấm 1 phép tính
+                    if (doi_phep_tinh) {
+                        mang_pt[mang_pt_index - 1] = type;
+                //chưa bấm phep tính:
+                else {
+                            mang_so[mang_so_index] = parseFloat
+                                (phim_moi);
+                            mang_so_index++;
+                            mang_pt[mang_pt_index] = type;
+                            mang_pt_index++
+                        }
+                    }
+
+                }
+
+
+        </script>
+</body>
+
+</html>

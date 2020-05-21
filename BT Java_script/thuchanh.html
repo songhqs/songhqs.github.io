@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>thuchanh</title>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+
+		// Bài 1:function bình phương của 1 số.
+
+		function binhphuong(x) {
+			return x * x;
+		}
+
+		//bai 2:tinh thế kỷ
+
+		function tinhtheky(year) {
+			return Math.ceil(year / 100);
+		}
+
+		//bai 3:cắt chuỗi
+		function catchuoikytu(chuoi) {
+			return chuoi.substring(0, 10) + "..."
+
+		}
+		//bai 4:Chuyển chữ Hoa- chũ thường
+		function uppercase() {
+			var str = "techMaster";
+			return str.replace("techMaster", "Techmaster");
+
+
+
+		}
+
+
+
+		//bai 5: Viết function lấy số min,max		
+
+
+
+		var maxNumber = [1, 5, 9, -3, 100];
+		maxNumber.sort(function (a, b) { return b - a });
+
+
+		var minNumber = [1, 5, 9, -3, 100];
+		minNumber.sort(function (a, b) { return a - b });
+
+		//bai 6: function sắp xếp mảng thứ tự học viên theo bảng chữ cái.
+
+
+
+		var studentList = ["tuan", "minh", "hanh", "vu", "binh", "an",];
+		studentList.sort()
+
+		var list = studentList.join()
+
+		for (var i = 0; i < list.length; i++) {
+			document.write("<p>" + i + "</P>")
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+
+
+</body>
+
+</html>

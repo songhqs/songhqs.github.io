@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DOM_B1</title>
+	<style>
+		.wrap {
+			display: flex;
+			border: solid green 0.1px;
+			padding: 5px;
+			text-align: justify;
+		}
+
+		p {
+			padding: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div class="wrap">
+
+		<P id="p1"> Con virus Trung Quốc, không chỉ làm đau đầu cả Bộ Y Tế, mà còn không ngờ lại “xé áo cho người xem
+			lưng” – bóc toang năng lực yếu kém một loạt các bộ trưởng khác trong thành phần Chính phủ của Thủ tướng
+			Nguyễn Xuân Phúc.</P>
+
+		<p id="p2" class="text"> Trước hết là con virus Trung Quốc “xé áo cho người xem lưng” 2 ông bộ trưởng Bộ Công
+			Thương và Bộ Nông nghiệp và Phát triển Nông thôn. Không bàn đến chuyện hôm trước đề nghị ngừng xuất khẩu gạo
+			hôm sau lại đề nghị xuất khẩu gạo, thì cả ông Bộ trưởng Bộ Công Thương Trần Tuấn Anh lẫn ông Bộ trưởng Bộ
+			Nông nghiệp và Phát triển Nông thôn Nguyễn Xuân Cường đều không có khả năng trả lời cho Thủ tướng Nguyễn
+			Xuân Phúc các câu hỏi sau:</p>
+
+
+		<p id="p3" class="text">Hiện Việt Nam đang có bao nhiêu tấn gạo dự trữ cho an ninh lương thực quốc gia?
+			2. An ninh lương thực quốc gia cần dự trữ bao nhiêu tấn gạo?
+			3. Việt Nam dừng xuất khẩu gạo thì dừng đến lúc nào?
+			4. Việt Nam tiếp tục xuất khẩu gạo thì từ ngay bây giờ hay từ lúc nào? và được xuất khẩu bao nhiêu tấn?</p>
+	</div>
+
+	<script>
+
+		function changeHTML_CSS() {
+			document.getElementById("p1").style.color = "green";
+			document.getElementById("p2").style.color = "red";
+			document.getElementById("p3").style.color = "yellow";
+			document.getElementById("p1").innerHTML = "<p2>";
+			document.getElementById("p2").style.fontSize = "25px";
+			document.body.style.backgroundColor = "lightgrey";
+		}
+		function changeFontSize() {
+			document.body.style.fontSize = "12px";
+		}
+
+	</script>
+	<button type="button" onclick="changeHTML_CSS()">change here</button>
+	<button type="button" onclick="changeFontSize()">change_size</button>
+
+</body>
+
+</html>

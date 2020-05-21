@@ -1,0 +1,83 @@
+<script>
+    //Bai 1
+    //Viết hàm tính thể tích hình cầu, với tham số truyền vào là bán kính của hình cầu.
+
+    function Vhinhcau(r) {
+        let pi = 3.14;
+        let V = (4 / 3) * pi * r * r * r;
+        console.log(V + " " + "là thể tích khối cầu ");
+
+
+        //Bai 2
+
+        function calculator(a, b) {
+
+            let tong = a;
+            for (let i = a; i < b; i++) {
+                tong += i;
+
+            }
+
+            return tong;
+        }
+
+
+
+        //bai 3 on tap javascript Kiểm tra số nguyên tố
+
+        function test_Snt(n) {
+
+            var test = true;
+
+            if (n < 2) {
+                test = false;
+            }
+            else if (n == 2) {
+                test = true;
+            }
+            else if (n % 2 == 0) {
+                test = false;
+            }
+            else {
+
+                for (var i = 3; i < (n - 1); i += 2) {
+                    if (n % i == 0) {
+                        test = false;
+                        break;
+                    }
+                }
+            }
+
+
+            if (test == true) {
+                document.write(n + " là số nguyên tố + <br/>");
+            }
+            else {
+                document.write(n + " không phải là số nguyên tố +</br>");
+            }
+        }
+        /*Bai 4 Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra
+                tính hợp lệ của thông tin người dùng nhập vào. Nếu hợp lệ trả về "Pass", nếu
+                không hợp lệ trả về "Fail".
+                Hãy kiểm tra username phải khác rỗng và không được vượt quá 20 ký tự, password
+                phải có độ dài từ 6 đến 32 ký tự, confirm phải giống password.
+                Giả sử tham số đầu vào là 1 object có dạng như sau (giá trị của thuộc tính là 
+                do người dùng nhập và đều là chuỗi): 
+                */
+        function bai4(obj) {
+            if (obj.username.length < 20 &&
+                obj.username.length > 0 &&
+                obj.username.indexOf("") === -1 &&
+                obj.password.length >= 6 &&
+                obj.password.length <= 32 &&
+                obj.password.indexOf("") === -1 &&
+                obj.password === obj.confirm) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+
+</script>

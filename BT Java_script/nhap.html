@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nhap</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+<script>
+
+var x = "C";
+
+switch(x) {
+  case "A":
+    document.write("Trả lời sai");
+   break;
+  case "B":
+    document.write("Trả lời gần đúng");
+    break;
+  case "C":
+    document.write("Trả lời đúng");
+   break;
+  case "D":
+    document.write("Chưa chính xác");
+    break;
+  default:
+    document.write("Hết thời gian");
+    break;
+    
+}
+
+function x(arr) {
+  let arrNew = [];
+  let arrNew = arr.filter((e) => e % 2 === 0);
+  arrNew.sort((a, b) => b - a);
+  return arrNew;
+}
+
+</script>
+
+
+
+
+</body>
+</html>
+
+

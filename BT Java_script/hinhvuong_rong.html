@@ -1,0 +1,57 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>rectanger</title>
+	</head>
+	<body>
+
+	<script>
+		
+	//Bài 3 in Hình vuông rỗng
+	function  printEmptyRectangle(a, b)  // a là chiều rộng, b là chiều cao
+	{
+		var str='';
+		for(var i=1; i<=b; i++)
+			{
+				if(i==1 || i==b){
+					for(var j=1; j<=a;j++)
+						{		
+							document.write("*");
+						}
+					
+				}
+				else if(i>=2 && i<b)
+				{
+					for(var k=1; k<=a;k++)
+						{
+							if(k==1 || k==a)
+								{
+									document.write("*");
+									
+								}
+							else{
+								//document.write("<span style=\"color:white;\">" +" "+0+" "+"</span>");
+								document.write("&nbsp;&nbsp;");
+							}					
+							
+						}						
+				}
+				document.write("<BR>");
+			}
+		return ;
+	}
+	document.write("<BR>");
+	document.write("<b>Bài 2: In hình vuông rỗng với chiều rộng và chiều cao bất kì</b>");	
+	document.write("<BR>");
+printEmptyRectangle(10, 10);
+
+
+
+
+
+
+	
+	</script>
+
+	</body>
+	</html>

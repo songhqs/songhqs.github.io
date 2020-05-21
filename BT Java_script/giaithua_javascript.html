@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>giaithua_javascript</title>
+	<meta charset="utf-8">
+
+</head>
+
+<body>
+
+	<script>
+
+
+
+
+
+		//----VÒNG LẶP ----
+
+		//BT Tinh Giai thừa
+
+		function giaithua(n) {
+			let kq = 1
+
+			for (let i = 1; i <= n; i++) {
+				kq *= i;  //kq=kq*i
+			}
+			return kq;
+
+		}
+
+		//BT reverse chuỗi
+
+		function daonguocchuoi(str) {
+			let ketQua = "";
+			for (let i = str.length - 1; i >= 0; i--) {
+				ketQua += str[i];
+			}
+
+			return ketQua;
+		}
+		
+
+
+		//Bai4 Sắp xếp studentList theo bảng chữ cái
+
+		function sapXep(array) {
+			var array = ["Bình", "Minh", "Tuấn", "An", "Hà"];
+			array.sort()
+			for (i = 1; i <= array.length; i++) {		
+			
+			document.write(i + (array[i]));
+		}
+	}
+
+	</script>
+
+</body>
+
+</html>

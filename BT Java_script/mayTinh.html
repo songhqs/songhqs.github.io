@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+    <title>Untitled Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 25px;
+            color: aliceblue;
+            padding: 100px 100px;
+
+        }
+
+        .clear_all {
+            clear: both;
+        }
+
+        .khung {
+            margin: 0px;
+            padding: 10px;
+            width: 314px;
+            height: 354px;
+            border: 2px solid #333333;
+            outline: none;
+
+        }
+
+        #ketqua {
+            margin: 10px 0px 15px 12px;
+            padding: 10px 10px 10px 10px;
+            width: 265px;
+            height: 40px;
+            text-align: right;
+            outline: none;
+            border: solid 1px #eaecee;
+            background-color: skyblue;
+            font-size: 18px;
+        }
+
+
+        .nut {
+            margin: 0px 0px 15px 10px;
+            padding: 10px 10px 10px 10px;
+            float: left;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #666;
+            color: white;
+            width: 60px;
+
+
+
+        }
+
+        .nut:hover {
+            background-color: #333;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="khung">
+        <input class="show" id="ketqua" type="text" />
+
+        <div class="clear_all"></div>
+        <div>
+            <input type="button" class="nut" value="C" onclick="ketqua.value=''" />
+            <input type="button" class="nut" value="&lt;-"
+                onclick="ketqua.value=ketqua.value.substr(0,ketqua.value.length-1)" />
+            <input type="button" class="nut" value="%" onclick="ketqua.value=eval(ketqua.value/100)" />
+            <input type="button" class="nut operator" value="+" onclick="ketqua.value += this.value" />
+        </div>
+
+        <div class="clear_all"></div>
+        <div>
+            <input type="button" value="7" class="nut num" onclick="ketqua.value += this.value"/>
+            <input type="button" value="8" class="nut num" onclick="ketqua.value += this.value" />
+            <input type="button" value="9" class="nut num" onclick="ketqua.value += this.value" />
+            <input type="button" class="nut operator" value="-" onclick="ketqua.value += this.value" />
+        </div>
+
+        <div class="clear_all"></div>
+        <div>
+            <input type="button" value="4" class="nut num" onclick="ketqua.value += this.value" />
+            <input type="button" value="5" class="nut num" onclick="ketqua.value += this.value" />
+            <input type="button" value="6" class="nut num" onclick="ketqua.value += this.value" />
+            <input type="button" class="nut operator" value="*" onclick="ketqua.value += this.value" />
+        </div>
+
+
+        <div class="clear_all"></div>
+        <div>
+            <input type="button" value="1" class="nut num" onclick="ketqua.value += this.value" />
+            <input type="button" value="2" class="nut num" onclick="ketqua.value += this.value" />
+            <input type="button" value="3" class="nut num" onclick="ketqua.value += this.value" />
+            <input type="button" class="nut operator" value="/" onclick="ketqua.value += this.value" />
+        </div>
+
+
+        <div class="clear_all"></div>
+        <div>
+            <input type="button" value="0" class="nut khong num" onclick="ketqua.value += this.value" />
+            <input type="button" class="nut cong" value="+-" onclick="ketqua.value=eval((-1)*ketqua.value)" />
+            <input type="button" class="nut " value="." onclick="ketqua.value += this.value" />
+            <input type="button" class="nut" value="=" onclick="ketqua.value=eval(ketqua.value)" />
+        </div>
+    </div>
+    </div>
+<script>
+ /* -Phương thức eval() có chức năng tính toán biểu thức toán học hoặc thức thi mã lệnh 
+ tùy thuộc vào tham số mà người dùng truyền vào khi khởi tạo phương thức.
+
+Nếu tham số truyền vào là một biểu thức toán học, phương thức sẽ tính toàn và trả về kết
+quả của biểu thức đó.
+
+Nếu tham số truyền vào là một hoặc nhiều đoạn mã javascript, phương thức sẽ thực thi các đoạn mã lệnh đó.
+    - Tạo nút căn bậc 2 :  value="√" onclick="ketqua.value=eval(Math.sqrt(ketqua.value))"
+*/
+</script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<title>translate</title>
+
+</head>
+
+<body>
+	<script>
+		// Viet hoa chu cai dau tien cua chuoi
+
+		function ucwords(str) {
+			str = (str + "").toLowerCase();
+			return str.replace(/^([a-z])|\s+([a-z])/g, function ($1) {
+				return $1.toUpperCase();
+			});
+		}
+
+		function listStudent(ten) {
+			let newlist = ten.filter(
+				(string) => string.substr(0, 1) == "H" || string.substr(0, 1) == "h");
+
+			return newlist;
+		}
+		//Bài 2: Chuyển 1 chuỗi gồm nhiều từ thành dạng Spinal case.
+		// Ví dụ: ''HELLO world'' => ''hello-world''.
+
+
+		function spinalCase(str) {
+			//if string is not delimited (nếu chuỗi ko đc phân định)
+			if (str.search(/[_\s]/) === -1) {
+				// insert dash before every uppercase letter
+				return str.replace(/(?=[A-Z])/g, '-').toLowerCase();
+			} else {
+				//change delimiters to dashes  
+				return str.replace(/[_\s](?=[a-zA-Z])/g, '-').toUpperCase();
+			}
+		}
+
+		//tìm giá trị đầu tiên (first character)trong string
+		function myFunction() {
+			var str = "HELLO WORLD";
+			var res = str.charAt(0)
+			return res;
+		}
+		//Bài 3  Cho 1 chuỗi, kiểm tra xem chuỗi đó có phải chuỗi đối xứng hay không 
+
+
+
+		//bai4 Viết hàm loại bỏ các giá trị sai trong 1 mảng. Các giá trị sai bao gồm: 
+		//false, null, undefined, NaN, 0, ''''.
+
+		var array = [1, 3, 5, null, false, undefined, 8, 9, "", NaN];
+		var filtered = array.filter(function (el) {
+			return el;     //loc sanh het cac boolean
+		});
+
+		console.log(filtered);
+
+
+
+
+	</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Vonglap</title>
+</head>
+
+<body>
+
+
+	<script>
+
+
+
+
+
+
+		//Bài 4 option 1:sắp xếp ds theo thứ tự alpha trong 1 mảng
+
+		function sortStudents(studentList) {
+
+			newArr = studentList.slice().sort();
+		}
+		for (let i = 0; i< newArr.length; i++) {
+			document.write(i + 1 + '.' + newArr[i] + "<br>");
+		}
+
+
+
+
+		//Bai 5(cho 1 mảng tạo 1 mảng mới vói các số dư tương ứng khi chia các số trong mảng cũ cho 2(5%2=dư 1)
+		function bai5(number) {
+			var newArr = [];
+			for (let i = 0; i <= number.length; i++) {
+				newArr.push(number[i] % 2);
+			}
+			console.log(newArr);
+
+		}
+
+
+
+
+		//Bài 5: Tạo 1 mảng mới
+		function bai5(number) {
+			var newArr = [];
+			for (let i = 0; i <= number.length; i++) {
+				newArr.push(number[i] % 2);
+			}
+			console.log(newArr);
+		}
+
+
+
+
+
+		//Bài 6 (in số 1-100 chắn:blue, lẻ: red)
+
+
+		function inchuoi() {
+			var j = 0;
+			for (var i = 1; i <= 100; i += 2) {
+				document.write("<font color='red'>" + i + "</font>" + "<br>", "<font color='blue'>" + (j += 2) + "</font>" + "<br>");
+			}
+		}
+
+
+		function bai6a() {
+			for (i = 0; i < 100; i++) {
+				if (i % 2 === 0) {
+					document.write(`<span style="color:blue">${i + 1}</span><br>`);
+				} else {
+					document.write(`<span style="color:red">${i + 1}</span><br>`);
+				}
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>

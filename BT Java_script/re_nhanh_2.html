@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>re_nhanh_2</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+
+    //bai2
+
+    function Diem(x) {
+      let kq = "";
+      if (x >= 8.5 && x <= 10) {
+        kq = "đạt  điểm A";
+      }
+      if (x >= 7 && x < 8.5) {
+        kq = "Đạt điểm B";
+      }
+      if (x >= 5.5 && x < 7) {
+        kq = "Đat điểm C";
+      }
+
+      if (x >= 4 && x < 5.5) {
+        kq = "Đạt điểm D";
+      }
+      if (x >= 0 && x < 4) {
+        kq = "Đạt điểm F";
+      }
+      return "điểm của bạn là " + kq;
+    }
+
+    //Bai 1 In ra ngày tháng năm, Mùa trong năm.
+    function ntn() {
+      var mua = "";
+      var d = new Date();
+      var month = d.getMonth() + 1;
+      if (month >= 1 && month <= 4) {
+        mua = "Mùa Xuân";
+      }
+      if (month >= 4 && month <= 9) {
+        mua = "mùa Hạ";
+      }
+      if (month >= 9 && month <= 10) {
+        mua = "Mùa Thu";
+      }
+      if (month >= 10 && month <= 12) {
+        mua = "Mùa Đông";
+      }
+
+      alert("Tháng " + month + " " + mua);
+    }
+
+    // bài 3
+    function tranSlate(maQuocgia) {
+      let wordTranslate = "hello";
+      switch (maQuocgia) {
+        case "US":
+          document.write("dich sang tieng Nhat");
+          break;
+        default:
+          document.write("dich sang tieng Viet");
+          break;
+        case "FR":
+          document.write("dich sang tieng Phap");
+          break;
+        case "KR":
+        document.write("dich sang tieng Hanf Quốc");
+          break;
+        case "IT":
+        document.write("dich sang tieng Italy");
+
+      }
+      return wordTranslate;
+
+    }
+
+
+
+    //ham Kt có phai so chăn ko:
+
+    function lasochan(number) {
+      return number % 2 == 0;
+
+      let newarr = []
+
+    }
+
+ /*bài 4 
+ Cho 1 mảng chỉ gồm các giá trị true và false 
+ (kiểu boolean). Hãy kiểm tra xem giá trị true xuất hiện lần đầu trong mảng ở vị trí nào.
+ */
+
+ function bai4_renhanh2(array){
+   for (let i=0; i<=array.length; i++){
+    if(array[i]===true){
+      return i; 
+   }
+  }
+}
+
+
+    
+
+  </script>
+
+
+</body>
+
+</html>

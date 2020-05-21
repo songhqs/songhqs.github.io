@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM</title>
+	<style>
+		.wrap {
+			display: flex;
+			border: solid green 0.1px;
+			padding: 5px;
+			text-align: justify;
+		}
+
+		p {
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+    <P id="p1" class="paragraph"> Con virus Trung Quốc, không chỉ làm đau đầu cả Bộ Y Tế, mà còn không ngờ lại “xé áo cho người xem
+        lưng” – bóc toang năng lực yếu kém một loạt các bộ trưởng khác trong thành phần Chính phủ của Thủ tướng
+        Nguyễn Xuân Phúc.</P>
+
+    <p id="p2" class="paragraph"> Trước hết là con virus Trung Quốc “xé áo cho người xem lưng” 2 ông bộ trưởng Bộ Công
+        Thương và Bộ Nông nghiệp và Phát triển Nông thôn. Không bàn đến chuyện hôm trước đề nghị ngừng xuất khẩu gạo
+        hôm sau lại đề nghị xuất khẩu gạo, thì cả ông Bộ trưởng Bộ Công Thương Trần Tuấn Anh lẫn ông Bộ trưởng Bộ
+        Nông nghiệp và Phát triển Nông thôn Nguyễn Xuân Cường đều không có khả năng trả lời cho Thủ tướng Nguyễn
+        Xuân Phúc các câu hỏi sau:</p>
+
+
+    <p id="p3" class="paragraph">>Hiện Việt Nam đang có bao nhiêu tấn gạo dự trữ cho an ninh lương thực quốc gia?
+        2. An ninh lương thực quốc gia cần dự trữ bao nhiêu tấn gạo?
+        3. Việt Nam dừng xuất khẩu gạo thì dừng đến lúc nào?
+        4. Việt Nam tiếp tục xuất khẩu gạo thì từ ngay bây giờ hay từ lúc nào? và được xuất khẩu bao nhiêu tấn?</p>
+</div>
+
+<script>
+// BT1 function changeFontSize(x): Thay đổi kích thước font chữ của cả 3 đoạn văn thành x pixels (x là một số nguyên).
+function changeFontSize(x) {
+  let ca = document.querySelectorAll("p");
+  for (let i = 0; i < ca.length; i++) {
+    ca[i].style.fontSize = x + "px";
+  }
+}
+changeFontSize(12);
+//BT 2 function increaseFontSize(paragraph): Tăng kích thước font chữ của đoạn văn mong muốn (paragraph) lên 1
+// pixel so với kích thước hiện tại, kích thước tăng lên không được vượt quá 30 pixels (Sử dụng sau khi gọi 
+//hàm changeFontSize() hoặc dùng window.getComputedStyle).
+function increaseFontSize(paragraph){
+  let p = document.getElementById(paragraph);
+  let style = window.getComputedStyle(p, null).getPropertyValue('font-size');
+  let fontSize = parseFloat(style);
+  if(fontSize < 30){
+    p.style.fontSize = (fontSize + 1) + 'px'
+    }else{p.style.fontSize = 30 + 'px'}
+}
+increaseFontSize('p1')
+//BT 3 Viết function decreaseFontSize(paragraph): Giảm kích thước font chữ của đoạn văn mong muốn (paragraph)
+// xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels.
+function decreaseFontSize(paragraph){
+  let p = document.getElementById(paragraph);
+  let style = window.getComputedStyle(p, null).getPropertyValue('font-size');
+  let fontSize = parseFloat(style);
+  if(fontSize > 10){
+    p.style.fontSize = (fontSize - 1) + 'px';
+    }else{p.style.fontSize = 10 + 'px'}
+}
+decreaseFontSize('p2');
+//BT 4 Viết function changeColor(): Đổi màu chữ của 3 đoạn văn theo thứ tự xanh, vàng, đỏ.
+function changeColor(){
+  let el = document.getElementsByClassName('paragraph');
+  el[0].style.color = 'blue';
+  el[1].style.color = 'yellow';
+  el[2].style.color = 'red';
+}
+changeColor();
+//BT 5 Viết function changeBgColor(color): Thay đổi màu nền của trang thành màu color.
+function changeBgColor(color){
+  let el = document.querySelectorAll('.body');
+  el[0].style.backgroundColor = color
+}
+changeBgColor('#e3e5e8')
+//BT 6 Viết function copyContent(paragraph1, paragraph2): Thay đổi nội dung của đoạn văn paragraph1 thành giống nội dung của đoạn văn paragraph2.
+function copyContent(paragraph1,paragraph2){
+  let p1 = document.getElementById(paragraph1)
+  let p2 = document.getElementById(paragraph2)
+  p1.innerText = p2.innerText
+}
+copyContent('p1','p2');
+
+
+
+</script>
+</body>
