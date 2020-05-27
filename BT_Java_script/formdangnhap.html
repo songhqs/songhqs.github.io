@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>form_dangky</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 90px;
+            font-family: sans-serif;
+            font-size: 18px;
+            background-color: rgb(226, 231, 236);
+
+        }
+
+        .input-box input {
+            width: 300px;
+            padding: 15px;
+            border: lightslategrey 1px solid;
+            outline: none;
+            font-size: 18px;
+
+        }
+
+        .nam-sinh select {
+            width: 300px;
+            padding: 10px;
+            font-size: 18px;
+
+        }
+
+        .dangnhap input {
+            width: 300px;
+            height: auto;
+            font-size: 18px;
+            font: 1em sans-serif;
+        }
+
+        .nam {
+            width: 300px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="result.html">
+        <div class="=wrap">
+
+
+            <h2>Đăng ký</h2>
+            <p> Vui lòng điền vào thông tin đăng nhập</p>
+
+            <label for="username"></label><br>
+            <div class="input-box">
+                <input type="=text" name="username" id="username" placeholder="User name">
+            </div>
+
+            <label for="email"></label>
+            <div class="input-box">
+                <input type="text" name="email" id="email" placeholder="username@gmail.com">
+            </div>
+
+
+            <label for="password"></label>
+            <div class="input-box">
+                <input type="password" name="password" id="password" placeholder="********">
+            </div>
+
+            </br>
+            <div class="nam-sinh">
+                <div class="nam"><select name="year"></div>
+            </div>
+
+            <option>chọn năm sinh...</option>
+            <option value="năm 1990">1990</option>
+            <option value="năm 1991">1991</option>
+            <option value="năm 1992">1992</option>
+            </select>
+
+            <br>
+            <input type="radio" name="gender" id="male" value="male"> <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" value="female"> <label for="female">Nữ</label>
+
+            <label for="remember"></label><br>
+
+            <Div class="dangnhap">
+                <input type="submit" value="Đăng nhập">
+            </Div>
+    </form>
+    </div>
+
+    
+    
+
+
+
+
+</body>
+</head>
+
+</html>

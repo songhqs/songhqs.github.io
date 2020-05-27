@@ -1,0 +1,23 @@
+<html>
+<head>
+
+</head>
+<body>
+    <h3>Chúc mừng bạn đã đăng ký thành công</h3>
+
+    <button onclick="myFunction()">Run</button>
+<p id="demo"></p>
+    <Script>
+
+var source = http://result.html?username=songhqs&email=songhqs%40gmail.com&password=xxxxxxxx&year=n%C4%83m+1990&gender=male
+            document.getElementById("demo").innerHTML = source;
+            function myFunction() {
+                var encode = encodeURIComponent(source);
+                decode = decodeURIComponent(encode);
+                var content = 'EnCode: ' + encode + '<br>' + 'DeCode: ' + decode;
+                document.getElementById("demo").innerHTML = content;
+            }
+    </Script>
+</body>
+
+</html>

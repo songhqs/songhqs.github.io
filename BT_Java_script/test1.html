@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>validForm</title>
+</head>
+<body>
+<form action="result.html" onsubmit="return validateForm()">
+
+    Username: <input type="username" id="username" placeholder="user..." ><br>
+
+    Password:<input type="password" id="password" placeholder="****" ><br>
+    <input type="submit" value="Submit">
+
+</form>
+
+    <script>
+function validateForm(){
+    let u =document.getElementById('username').value;
+    let p =document.getElementById('password').value;
+
+    if(p==""){
+        alert('pls enter password');
+        return false;
+    }
+    else if(u==""){
+        alert("please enter user name");
+        return false;
+    }else{
+        alert('Ok thank! your data will be sent to serve');
+            
+    }
+    return true;
+    }
+
+    </script>
+
+
+</body>
+
+
+</html>

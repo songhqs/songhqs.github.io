@@ -67,10 +67,10 @@
         function bai4(obj) {
             if (obj.username.length < 20 &&
                 obj.username.length > 0 &&
-                obj.username.indexOf("") === -1 &&
+                obj.username.indexOf("") ===-1 &&
                 obj.password.length >= 6 &&
                 obj.password.length <= 32 &&
-                obj.password.indexOf("") === -1 &&
+                obj.password.indexOf("") ===-1 &&
                 obj.password === obj.confirm) {
                 return true;
             }
@@ -78,6 +78,27 @@
                 return false;
             }
         }
+
+        //viết function tìm 1 chuỗi ko có khoảng trắng,và có ít nhất 1 số
+
+        function checkpassword(str) {
+            let arr = str.split('');
+            let kq = false;
+            if (str.indexOf(' ') == -1) {
+                for (let i = 0; i < arr.length; i++) {
+                    let test = parseInt(arr[i]);
+                    if (test || test == 0) {
+                        kq = true;
+                    }
+                }
+            }
+            return kq;
+        }
+        //cách2
+        function checkpassword(input){
+            if(input.search(/\s/g)==-1 &&input.search(/\d))
+        }
+
 
 
 </script>

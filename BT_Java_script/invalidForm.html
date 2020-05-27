@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>validataForm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: auto;
+            padding: 90px;
+            font-family: sans-serif;
+            font-size: 16px;
+            background-color: rgb(226, 231, 236);
+
+        }
+
+        .input-box input {
+            width: 300px;
+            padding: 10px;
+            border: lightslategrey 1px solid;
+            outline: none;
+            font-size: 18px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="result.html" onsubmit="return validateForm()">
+        <div class="=wrap">
+
+
+            <h2>Đăng ký</h2>
+            <p> Điền vào thông tin đăng ký</p>
+
+            <label for="username">Tên đăng nhập</label><br>
+            <div class="input-box">
+                <input type="=text" name="username" id="username" placeholder="User name">
+
+            </div><br>
+
+            <label for="email">Email</label><br>
+            <div class="input-box">
+                <input type="email" name="email" id="email" placeholder="Email add">
+            </div><br>
+
+
+            <label for="password">Mật khẩu</label><br>
+            <div class="input-box">
+                <input type="password" name="password" id="password" placeholder="********">
+
+            </div><br>
+
+            <label> Số điện thoại</label><br>
+            <input type="text" id="sdt" placeholder="0903..."><br>
+
+            <label>Năm sinh</label><br>
+            <select id="nam"></select>
+
+            <br>
+            <input type="radio" name="gender" id="male" value="male"> <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" value="female"> <label for="female">Nữ</label>
+
+            <label for="remember"></label><br>
+
+            <Div class="input-box">
+                <input type="submit" value="Submit" id="submit">
+            </Div>
+    </form>
+    </div>
+
+    <script>
+        let option = `<option value="">Chọn năm </option>`
+        for (let i = 1960; i <= 2020; i++) {
+            option += `<option value="${i}">${i}</option>`;
+
+        }
+        document.getElementById('nam').innerHTML = option;
+
+        document.getElementById("nam").style.fontSize = "18px";
+        document.getElementById("nam").style.width = "200px";
+        document.getElementById("nam").style.padding = "10px";
+        document.getElementById("sdt").style.border = "solid 1px";
+        document.getElementById("sdt").style.width = "300px";
+        document.getElementById("sdt").style.fontSize = "18px";
+        document.getElementById("sdt").style.padding = "10px";
+
+
+        function validateForm() {
+            let u = document.getElementById("username").value;
+            let p = document.getElementById("password").value;
+            if (u == "") {
+                alert('Please enter your Username');
+                return false;
+            }
+            else if (p == "") {
+                alert('please enter your password');
+                return false;
+            }
+            else {
+                alert('all data will be sent to serve, thank for regist!');
+                return true;
+            }
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</head>
+
+</html>
