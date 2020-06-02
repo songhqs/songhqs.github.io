@@ -1,0 +1,56 @@
+
+* {
+	box-sizing: border-box;
+	
+	
+}
+body{
+	margin: auto;
+
+}
+
+
+
+ nav{
+	display: inline-block;
+	max-width: 960px;
+ 	background-color: #38CE08;
+ 	padding: 13px;
+}
+a {
+	padding: 0px 18px;
+	font-family: roboto;
+	text-decoration-line: none;
+	color: white;
+	font-size: 18px;
+	margin: auto;
+}
+
+nav a:hover{
+	  background-color: #2EA708;
+	}
+
+
+ 
+
+div.note {
+	text-align: center;
+	font-family: roboto;
+	background-color:none;
+	text-decoration-color: rgb(1);
+	
+}	
+
+ @media only screen and (max-width: 500px){
+	 
+	 .container .col{
+		width:100%;
+		
+	 }
+					
+	}
+	@media screen and (min-width: 800px){
+		body {
+			background-color: greenyellow;
+		  }
+	}
