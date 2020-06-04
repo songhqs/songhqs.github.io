@@ -6,24 +6,37 @@ body{
     max-width: 1200px;
    
 }
-.container header{
-    margin: auto;
+.container{
+    
     max-width: 1200px;
 }
-.container section{
-    margin-left: 0px;
 
-}
-.menu ul li {
+.menu a {
     float: left;
-    padding: 30px 80px 0px 0px;
+    padding: 30px 90px 0px 0px;
     margin: 0px;
-	
+    font-family: Ubunto-Regular;
+    font-size: 14px;
+    color: grey;
 
 }
-ul { 
-    list-style-type: none;
-    margin: 0px;
+a{
+    color: grey;
+}
+.wrap{
+    height: 800px;
+    width: 100%;
+    padding: 250px;
+}
+.center{
+    
+    width: 130px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
 }
 
 
@@ -34,6 +47,7 @@ ul {
     background-color: #EAECEE;
     text-align: center;
     margin-left: -16px;
+    justify-content: center;
 
     
 
@@ -55,12 +69,36 @@ h4{
     color: #ABB2B9 ;
     font-size: 21px;
 }
-.container{
-    justify-content: center;
-}
 
-.container-fluid{
+
+
+input{
+    outline: none;
+    background-color:#EAECEE;
+    border: none;
+    
+
+
+}
+.input{
+    justify-content: center;
+   
+    padding: 0px 100px 0px 0px;
+    line-height: 4px;
+ 
+    }
+.bottom-menu {
     width: 100%;
-    line-height: 1em;
-    background-color: #EAECEE;
+    height: 70px;
+    display: flex;
+    background-color: lightgrey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.one{
+    width: 50%;
+    margin-left: 70px;
+}
+.two{
+    margin-right: 0px;
 }
