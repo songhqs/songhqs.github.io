@@ -1,0 +1,22 @@
+#slider{
+    margin: 0px auto;
+    max-width: 1200px;
+    height: 630px;
+    border: 1px #c20b0b solid;
+    position: relative;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+
+}
+#prev{
+    text-transform: uppercase;
+    left: 30px;
+    top: 300px;
+    position: absolute;
+}
+#next{
+    text-transform: uppercase;
+    right: 30px;
+    top: 300px;
+    position: absolute;
+}
