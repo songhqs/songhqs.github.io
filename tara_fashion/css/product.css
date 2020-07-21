@@ -1,0 +1,61 @@
+.navbar{
+    text-transform: uppercase;
+    background-color: rgb(43, 51, 126);
+
+}
+.top_menu{
+    display: flex;
+    max-width: 250px;
+    justify-content: space-around;
+    margin-left: 930px;
+    border: solid 1px lightgrey;
+    align-items: center;
+}
+
+.detail{
+    
+    margin-bottom: 30px;
+    border: solid 1px blue
+}
+body{
+    margin: auto;
+    max-width: 1400px;
+}
+.container{
+    margin: auto;
+    
+}
+.col-m-2{
+    
+    justify-content: center;
+}
+.col-m-6{
+       padding: 1rem;
+}
+.col-m-4{
+    max-width: 33%;
+}
+
+.detail{
+    
+    margin-bottom: 1.5rem;
+    
+}
+.container-right{
+   
+    padding: 0rem;
+}
+
+
+.btn{
+    border-radius: 0%;
+}
+.hide_detail{
+    font-family: roboto;
+    font-size: 14px;
+}
+body{
+
+    margin: auto;
+    max-width: 1400px;
+}

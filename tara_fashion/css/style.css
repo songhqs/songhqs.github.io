@@ -1,0 +1,67 @@
+
+
+body{
+
+    margin: auto;
+    max-width: 1400px;
+}
+.header{
+    background-image: url(img/bnner.png);
+    max-width: 1400px;
+}
+.logo{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin-left: 80px;
+    color: cornflowerblue;
+}
+.navbar{
+    text-transform: uppercase;
+    background-color: rgb(43, 51, 126);
+}
+
+.container{
+    max-width: 1130px;
+   justify-content: center;
+}
+.btn{
+    border-radius: 0%;
+}
+.top_menu{
+    display: flex;
+    max-width: 250px;
+    justify-content: space-around;
+    margin-left: 930px;
+    border: solid 1px lightgrey;
+    align-items: center;
+}
+.footer{
+    margin-top: 2rem;
+    background-color: rgb(17, 73, 70);
+    justify-content: space-evenly;
+    
+}
+.footer p a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.footer h5{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-transform: uppercase;
+   margin-bottom: 1.5rem;
+   font-size: 1rem;
+
+}
+h5{
+    color: white;
+}
+.icon{
+    max-width: 150px;
+    display: flex;
+    border: 1px solid thistle;
+    justify-content: space-around;
+      
+
+}

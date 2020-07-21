@@ -1,0 +1,41 @@
+.navbar{
+    text-transform: uppercase;
+    background-color:rgb(43, 51, 126);
+}
+
+.top_menu{
+    display: flex;
+    max-width: 250px;
+    justify-content: space-around;
+    margin-left: 930px;
+    border: solid 1px lightgrey;
+    align-items: center;
+}
+
+body{
+    margin: auto;
+    max-width: 1400px;
+}
+.container{
+    margin: auto;
+}
+p{
+    text-align: justify;
+}
+ul li a{
+    text-transform: uppercase;
+    color: black;
+    font-size: 14px;
+}
+li{
+    list-style-type: none;
+    line-height: 2rem;
+}
+header{
+    max-width: 950px;
+    background-image: url("../img/bnner.jpg");
+    height: 240px;
+}
+ul{
+    margin-left: 0px;
+}

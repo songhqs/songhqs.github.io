@@ -1,0 +1,18 @@
+body{
+
+    margin: auto;
+    max-width: 1400px;
+}
+.navbar{
+    text-transform: uppercase;
+    background-color:rgb(43, 51, 126);
+}
+.top_menu{
+    display: flex;
+    max-width: 250px;
+    justify-content: space-around;
+    margin-left: 930px;
+    border: solid 1px lightgrey;
+    align-items: center;
+}
+

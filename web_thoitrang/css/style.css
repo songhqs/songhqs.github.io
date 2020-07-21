@@ -1,0 +1,21 @@
+
+
+body{
+
+    margin: auto;
+    max-width: 1400px;
+}
+.container-banner{
+    background-image: url(img/banner.png);
+}
+
+.container{
+    max-width: 1130px;
+   justify-content: center;
+}
+.btn{
+    border-radius: 0%;
+}
+.top_menu{
+    margin-left: 1200px;
+}
