@@ -10,6 +10,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+        <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/blog.css">
     <script src="https://kit.fontawesome.com/18d167862a.js" crossorigin="anonymous"></script>
@@ -17,15 +23,15 @@
 
 <body>
     <header>
-        <div class="logo"> tara fashion</div>
+        <div class="wrap">
+            <div class="logo">Tara Fashion</div>
 
-
-
-        <div class="top_menu  d-flex">
-            <div><a href="#"><i class="fas fa-cart-arrow-down" title="giỏ hàng"></i></a></div>
-            <div><a href="#"><i class="fas fa-user-plus" title="đăng nhập"></i></a></div>
-            <div><a href="#"><i class="fas fa-phone-volume" title="hot line"></i></a></div>
-            <div>0913587911</div>
+            <div class="top_menu  d-flex">
+                <div><a href="#"><i class="fas fa-cart-arrow-down" title="giỏ hàng"></i></a></div>
+                <div><a href="#"><i class="fas fa-user-plus" title="đăng nhập"></i></a></div>
+                <div><a href="#"><i class="fas fa-phone-volume" title="hot line"></i></a></div>
+                <div>0913587911</div>
+            </div>
         </div>
 
     </header>
@@ -63,7 +69,7 @@
     <section class="container">
 
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <div class="p-2 bg-info text-white text-left"
                     style="max-width: 100%; font-size: 18px; margin-top:30px;">
                     BỘ LỌC
@@ -75,12 +81,12 @@
                     BÀI VIẾT MỚI NHẤT
                 </div>
             </div>
-            <div class="col-lg-4"></div>
+            <div class="col-lg-5"></div>
 
         </div>
         <div class="row" style="margin-top: 30px;">
 
-            <div class="col-lg-3">
+            <div class="col-lg-2">
                 <ul>
                     <li><a href="">Tất cả</a></li>
                     <li><a href="">Quần áo thiet kế </a></li>
@@ -109,13 +115,13 @@
                     tunic hoặc những chiếc váy maxi suông dài.</p>
 
             </div>
-            <div class="col-lg-4">
-                <img src="img/blog/a3.jpg">
+            <div class="col-lg-5">
+                <img src="img/anh1.jpg">
             </div>
         </div>
         <div class="row" style="margin-top: 30px;">
 
-            <div class="col-lg-3">
+            <div class="col-lg-2">
 
             </div>
             <div class="col-lg-5">
@@ -127,8 +133,51 @@
                     bạn gái tuổi 20 - 35, thương hiệu thời trang cao cấp EMSPO cũng cho ra mắt nhiều dòng sản phẩm
                     mang phong cách đột phá và sáng tạo.</p>
             </div>
-            <div class="col-lg-4">
-                <img src="img/blog/a7.jpg">
+            <div class="col-lg-5">
+                <img src="img/anh3.jpg">
             </div>
         </div>
     </section>
+    <!--footer-->
+    <footer>
+        <div class="footer d-flex">
+            <div class="infor p-5">
+                <h5>Thông tin công ty</h5>
+                <p><a href="#">Giới thiệu Fashion Tara</a></p>
+                <p><a href="#">Chương trình Afilate</a></p>
+                <p><a href="#">Bloger thời trang</a></p>
+                <p><a href="#">Chiết khấu cho sinh viên</a></p>
+
+            </div>
+            <div class="support p-5">
+                <h5>Hỗ trợ khách hàng</h5>
+                <p><a href="#">Phí vận chuyển</a></p>
+                <p><a href="#">Trả lại hàng</a></p>
+                <p><a href="#">Hướng dẫn đặt hàngd</a></p>
+                <p><a href="#">Hướng dẫn kích thước</a></p>
+
+            </div>
+            <div class="service p-5">
+                <h5>dịch vụ khách hàng</h5>
+                <p><a href="#">Liên hệ với chúng tôi</a></p>
+                <p><a href="#">Số ĐT: 0913587011</a></p>
+                <p><a href="#">Điểm thưởng</a></p>
+                <div class="icon">
+                    <a href="facebook.com"><i class="fa fa-facebook"></i> </a>
+                    <a href="twetter.com"><i class="fa fa-twitter"></i> </a>
+                    <a href="instagram.com"><i class="fa fa-instagram"></i> </a>
+
+                </div>
+
+            </div>
+            <div class="contact p-5">
+                <h5>Kết nối với chúng tôi</h5>
+                <p><a href="#">Phương thức thanh toán</a></p>
+                <p><a href="#">Nhập địa chỉ Email để nhận thông tin KM</a></p>
+                <input type="email" placeholder="Email của bạn">
+                <button>submit</button>
+            </div>
+
+
+        </div>
+    </footer>

@@ -4,17 +4,25 @@ body{
 
     margin: auto;
     max-width: 1400px;
+    position: relative;
 }
-.header{
-    background-image: url(img/bnner.png);
+header{
     max-width: 1400px;
+    background-image: url("../img/123.jpg");
+    margin: auto;
+
+    
+   
 }
+
 .logo{
    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fantasy;
     font-size: 30px;
     margin-left: 80px;
     color: cornflowerblue;
+    text-transform: uppercase;
+    text-align: center;
 }
 .navbar{
     text-transform: uppercase;
@@ -28,18 +36,23 @@ body{
 .btn{
     border-radius: 0%;
 }
+
 .top_menu{
-    display: flex;
-    max-width: 250px;
+    
+    max-width: 30%;
     justify-content: space-around;
-    margin-left: 930px;
+    margin-left: 650px;
+    margin-top: 165px;
     border: solid 1px lightgrey;
     align-items: center;
+    
+    
 }
 .footer{
     margin-top: 2rem;
     background-color: rgb(17, 73, 70);
     justify-content: space-evenly;
+    position: relative;
     
 }
 .footer p a{
@@ -65,3 +78,17 @@ h5{
       
 
 }
+header{
+    max-width: 923px;
+    background-image: url("../img/bnner.jpg");
+    height: 240px;
+    margin: auto;
+}
+.fixed {
+    position: fixed;
+    top: 100vh;
+    margin-left: 1350px;
+    max-width: 1400px;
+
+    
+  }

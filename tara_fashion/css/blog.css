@@ -18,7 +18,10 @@ body{
 }
 .container{
     margin: auto;
+    max-width: 1150px;
+    
 }
+
 p{
     text-align: justify;
 }
@@ -31,11 +34,41 @@ li{
     list-style-type: none;
     line-height: 2rem;
 }
-header{
-    max-width: 950px;
-    background-image: url("../img/bnner.jpg");
-    height: 240px;
-}
 ul{
-    margin-left: 0px;
+    padding: 0px;
 }
+header{
+    max-width: 1400px;
+    background-image: url("../img/123.jpg");
+    
+    margin: auto;
+}
+.footer{
+    margin-top: 2rem;
+    background-color: rgb(17, 73, 70);
+    justify-content: space-evenly;
+    
+}
+.footer p a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.footer h5{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-transform: uppercase;
+   margin-bottom: 1.5rem;
+   font-size: 1rem;
+
+}
+h5{
+    color: white;
+}
+.icon{
+        max-width: 150px;
+        display: flex;
+        border: 1px solid thistle;
+        justify-content: space-around;
+          
+    
+    }
