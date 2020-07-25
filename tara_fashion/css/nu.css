@@ -27,8 +27,8 @@ body{
 }
 header{
     max-width: 1400px;
-    background-image: url("../img/123.jpg");
-    
+    background-image: url("../img/1400px-hong.jpg");
+    height: 422px;
     margin: auto;
 }
 ul li a{
@@ -71,4 +71,9 @@ h5{
     justify-content: space-around;
       
 
+}
+span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: black;
 }

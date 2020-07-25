@@ -8,17 +8,16 @@
     color: white;
     text-transform: uppercase;
     font-size: 12px;
+    line-height: 5px;
 }
 .footer h5{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    text-transform: uppercase;
    margin-bottom: 1.5rem;
    font-size: 1rem;
+   color: white;
+}
 
-}
-h5{
-    color: white;
-}
 .icon{
     max-width: 150px;
     display: flex;

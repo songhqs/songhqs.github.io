@@ -1,14 +1,13 @@
-
-
 body{
 
     margin: auto;
     max-width: 1400px;
-    position: relative;
+    
 }
 header{
     max-width: 1400px;
-    background-image: url("../img/123.jpg");
+    background-image: url("../img/modern-flowing-blue.jpg");
+    height: 286px;
     margin: auto;
 
     
@@ -20,9 +19,9 @@ header{
     font-family: fantasy;
     font-size: 30px;
     margin-left: 80px;
-    color: cornflowerblue;
+    color: rgb(240, 242, 247);
     text-transform: uppercase;
-    text-align: center;
+    justify-content: center;
 }
 .navbar{
     text-transform: uppercase;
@@ -39,10 +38,11 @@ header{
 
 .top_menu{
     
-    max-width: 30%;
+    max-width: 20%;
     justify-content: space-around;
-    margin-left: 650px;
-    margin-top: 165px;
+    margin-left: 970px;
+    
+    margin-top: 110px;
     border: solid 1px lightgrey;
     align-items: center;
     
@@ -78,17 +78,16 @@ h5{
       
 
 }
-header{
-    max-width: 923px;
-    background-image: url("../img/bnner.jpg");
-    height: 240px;
-    margin: auto;
-}
+
 .fixed {
     position: fixed;
     top: 100vh;
     margin-left: 1350px;
     max-width: 1400px;
-
-    
-  }
+ }
+ span{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 14px;
+     color: black;
+     line-height: 10px;
+ }
