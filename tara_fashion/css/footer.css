@@ -8,7 +8,7 @@
     color: white;
     text-transform: uppercase;
     font-size: 12px;
-    line-height: 5px;
+    line-height: 2px;
 }
 .footer h5{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,7 +19,7 @@
 }
 
 .icon{
-    max-width: 150px;
+    max-width: 180px;
     display: flex;
     border: 1px solid thistle;
     justify-content: space-around;

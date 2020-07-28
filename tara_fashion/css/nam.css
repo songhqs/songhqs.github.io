@@ -4,6 +4,10 @@
     margin-top: 0px;
     
 }
+.carousel-caption{
+    background: rgba(117, 190, 218, 0.5);
+    max-height: 110px;
+}
 body{
 
     margin: auto;
@@ -23,8 +27,8 @@ body{
 }
 header{
     max-width: 1400px;
-    background-image: url("../img/modern-flowing-blue.jpg");
-    height: 286px;
+    background-image: url("../img/anh_banner.jpg");
+    height: 504px;
     
     margin: auto;
 }
@@ -62,7 +66,7 @@ h5{
     color: white;
 }
 .icon{
-    max-width: 150px;
+    max-width: 180px;
     display: flex;
     border: 1px solid thistle;
     justify-content: space-around;
@@ -74,3 +78,9 @@ span{
     font-size: 14px;
     color: black;
 }
+.fixed {
+    position: fixed;
+    top: 100vh;
+    margin-left: 1350px;
+    
+ }

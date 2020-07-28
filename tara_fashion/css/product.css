@@ -84,13 +84,11 @@ header{
    text-transform: uppercase;
    margin-bottom: 1.5rem;
    font-size: 1rem;
+   color: white;
+}
 
-}
-h5{
-    color: white;
-}
 .icon{
-    max-width: 150px;
+    max-width: 180px;
     display: flex;
     border: 1px solid thistle;
     justify-content: space-around;
@@ -103,3 +101,9 @@ span{
     color: black;
     line-height: 10px;
 }
+.fixed {
+    position: fixed;
+    top: 100vh;
+    margin-left: 1350px;
+    
+ }

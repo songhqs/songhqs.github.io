@@ -5,24 +5,33 @@ body{
     
 }
 header{
+    display: flex;
     max-width: 1400px;
     background-image: url("../img/modern-flowing-blue.jpg");
     height: 286px;
-    margin: auto;
-
-    
-   
+    margin: auto;  
+    justify-content: space-evenly;
 }
 
-.logo{
+#logo{
    
-    font-family: fantasy;
+    font-family: poppins;
+    font-style: bold;
     font-size: 30px;
-    margin-left: 80px;
-    color: rgb(240, 242, 247);
+    color: rgb(37, 5, 75);
     text-transform: uppercase;
     justify-content: center;
+     margin-bottom: 0px;
+    max-height: 50px;
 }
+.top_menu{
+    
+   
+    justify-content: space-around;  
+    border: solid 1px lightgrey;
+}
+
+
 .navbar{
     text-transform: uppercase;
     background-color: rgb(43, 51, 126);
@@ -35,19 +44,17 @@ header{
 .btn{
     border-radius: 0%;
 }
-
-.top_menu{
-    
-    max-width: 20%;
-    justify-content: space-around;
-    margin-left: 970px;
-    
-    margin-top: 110px;
-    border: solid 1px lightgrey;
-    align-items: center;
-    
-    
+.fixed-bottom{
+    position: fixed;
+     bottom: 50px; 
+     right: 30px; 
+     cursor: pointer; 
+     transition: opacity 0.2s linear 0s, visibility; 
+     opacity: 1; 
+     visibility: visible;"
 }
+
+
 .footer{
     margin-top: 2rem;
     background-color: rgb(17, 73, 70);
@@ -71,7 +78,7 @@ h5{
     color: white;
 }
 .icon{
-    max-width: 150px;
+    max-width: 180px;
     display: flex;
     border: 1px solid thistle;
     justify-content: space-around;
@@ -79,15 +86,10 @@ h5{
 
 }
 
-.fixed {
-    position: fixed;
-    top: 100vh;
-    margin-left: 1350px;
-    max-width: 1400px;
- }
+
  span{
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      font-size: 14px;
      color: black;
      line-height: 10px;
- }
+ } 
