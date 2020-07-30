@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup-login</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <p> html bao gồm 2 thành phần cơ bản:
+
+<p>ạo một button để khi click vào thì form đăng nhập được show ra:</p>
+
+
+<a class="login-window button" href="#login-box">Đăng nhập</a>
+
+
+<p>Sau đó là lớp “.login”, chính là form đăng nhập như sau</p>
+<div class="login" id="login-box">Đăng nhập
+ 
+    <a class="close" href="#"><img class="img-close" title="Close Window" alt="Close" src="close.png" /></a>
+   <form class="login-content" action="#" method="post"><label class="username">
+    <span>Tên hoặc email</span>
+    <input id="username" type="text" autocomplete="on" name="username" placeholder="Username" value="" />
+    </label>
+    <label class="password">
+    <span>Mật khẩu</span>
+    <input id="password" type="password" name="password" placeholder="Password" value="" />
+    </label>
+    <button class="button submit-button" type="button">Đăng nhập</button>
+    
+    <a class="forgot" href="#">Quên mật khẩu?</a></form></div>
+   
+<script>
+    $(document).ready(function() {
+    $('a.login-window').click(function() {
+        //lấy giá trị thuộc tính href - chính là phần tử "#login-box"
+        var loginBox = $(this).attr('href');
+ 
+        //cho hiện hộp đăng nhập trong 300ms
+        $(loginBox).fadeIn(300);
+ 
+        // thêm phần tử id="over" vào sau body
+        $('body').append('<div id="over">');
+        $('#over').fadeIn(300);
+ 
+        return false;
+ });
+ 
+ // khi click đóng hộp thoại
+ $(document).on('click', "a.close, #over", function() {
+       $('#over, .login').fadeOut(300 , function() {
+           $('#over').remove();
+       });
+      return false;
+ });
+});
+</script>
+
+<p>Mã jquery sẽ xử lý 2 sự kiện chính:
+
+Khi click vào nút đăng nhập: $('a.login-window').click(function():
+
+Câu lệnh var loginBox = $(this).attr('href') sẽ lấy thuộc tính href – chính là “#login-box” . Bạn xem lại mã html ta đã có:
+
+<a href="#login-box" class="login-window button">Đăng nhập</a>
+
+Hàm fadeIn(300) sẽ hiện dần hộp đăng nhập trong 300ms. Bạn có thể thay đổi thời gian này và nhớ là đơn vị tính bằng ms. Hoặc cũng có thể dùng fadeIn(“slow”), fadeIn(“fast”) để lớp hiện ra chậm hay nhanh.
+
+Câu lệnh $('body').append('<div id="over"></div>') sẽ thêm vào cuối thẻ body id “#over” mà ta đã style cho nó ở phần CSS. Sau đó là show nó ra thôi.
+
+Sự kiện thứ 2: khi ta click vào nút đóng cửa sổ hoặc click vào lớp phủ nền “#over” thì cửa sổ đăng nhập sẽ đóng lại.
+
+Hãy chú ý câu lệnh $(document).on('click', "a.close, #over", function(){….})
+
+Các bạn sẽ thắc mắc tại sao không dùng $(“a.close, #over”).on(). Bởi vì, phần tử “#over” được thêm vào sau khi tài liệu ( gồm cả mã jquery trên ) được load nên nếu dùng như vậy thì hộp thoại sẽ không bị ảnh hưởng khi ta click vào nền. Do vậy sử dụng $(document).on() là hợp lý. Cái này bạn tự test để kiểm tra và xem thêm về hàm on() tại http://api.jquery.com/on/.
+
+Nhiều bạn có thể sử dụng hàm live() thay cho hàm on(). Tuy nhiên từ phiên bản jquery 1.9 thì hàm live() không được hỗ trợ nữa và nó sẽ không hoạt động.
+
+Hàm fadeOut() là công việc ngược lại hàm fadeIn(), ẩn mờ dần box đăng nhập, còn hàm remove() sẽ loại bỏ phần tử “#over” khỏi tài liệu.
+
+Như vậy là chúng ta đã tạo được một box dialog đơn giản để điền thông tin đăng nhập. Bạn hãy thực hành và tạo những hiệu ứng và style đẹp hơn mà mình thích.
+
+Lời kết
+Mình nghĩ rằng không khó để tìm ra những plugin tạo lightbox hay dialog trên mạng. Rất nhiều, tuy nhiên nếu các bạn tự tay xây dựng cho mình một sản phẩm riêng thì vẫn thích thú hơn đúng không? Nhất là những bạn đang bắt đầu với jquery. Hy vọng bài viết sẽ có ích với các bạn. Hãy comment bên dưới nếu bạn cần trao đổi nhé!
+</p>
+
+
+</body>
+</html>
