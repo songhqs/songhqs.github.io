@@ -13,13 +13,45 @@ body{
 
     margin: auto;
     max-width: 1400px;
+    
+}
+
+.logo{
+    display: flex;
+    max-width: 500px;
+    height: auto;
+    margin-top: 230px;
+    margin-left: 100px;
+    align-items: center;
+    position: absolute;
+    
+   
+}
+.brand-name{
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;;
+    text-transform: uppercase;
+    font-weight: 550;
+    
+    color: white;
+    white-space: normal;
+    
+    
+ 
+}
+.logo-wrap{
+    padding: 30px;
+    line-height: 0;
+}
+.slogan{
+    color: white;
 }
 .container{
     max-width: 1140px;
 }
 .navbar{
     text-transform: uppercase;
-    background-color: rgb(43, 51, 126);
+    background-color: rgb(239, 239, 245);
+   
 }
 .top_menu{
     display: flex;
@@ -31,14 +63,22 @@ body{
 }
 header{
     max-width: 1400px;
-    background-image: url("../img/1400px-hong.jpg");
+    background-image: url("../img/benner-nho.jpg");
     height: 422px;
     margin: auto;
+    position: relative;
+    
+   
 }
+.nav-item-active a{
+    color:green
+      }
+    
 ul li a{
     text-transform: uppercase;
     color: black;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 700;
 }
 li{
     list-style-type: none;
@@ -81,9 +121,19 @@ span{
     font-size: 14px;
     color: black;
 }
-.fixed {
+.fixed-bottom{
     position: fixed;
-    top: 100vh;
-    margin-left: 1350px;
+     bottom: 50px; 
+     right: 50px; 
+     cursor: pointer; 
+     transition: opacity 0.2s linear 0s, visibility; 
+     opacity: 0.5; 
+     visibility: visible;
+     width: 50px;
     
- }
+    align-items: center;
+    z-index: 1000;
+    border-radius: 50%;
+    border: 1px solid #78c225;
+    left: auto;
+}

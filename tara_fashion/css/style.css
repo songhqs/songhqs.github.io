@@ -2,33 +2,128 @@ body{
 
     margin: auto;
     max-width: 1400px;
+   
     
 }
 header{
-    display: flex;
-    max-width: 1400px;
-    background-image: url("../img/modern-flowing-blue.jpg");
-    height: 286px;
-    margin: auto;  
-    justify-content: space-evenly;
+  background-image: url("../img/benner-nho.jpg");
+  height: 422px;
+  position: relative;
+  
 }
 
-#logo{
+.header-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.header-right__list{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    height: 100%;
+    margin-bottom: 0px;
+
+
+}
+.header-right__item{
+    height: 100%;
+    display: flex;
+    margin-right: 2rem;
+    align-items: center;
+}
+p.content-slide__blog {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+a.title-slide-blog {
+  text-decoration: none;
+  color: #78c225;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.icon-slide-content-blog {
+  margin-bottom: 10px;
+}
+
+span.titles-blog {
+  color: gray;
+  font-size: 11px;
+}
+
+.icon-blog {
+  margin-right: 10px;
+  color: gray;
+  font-size: 13px;
+}
+
+.icon-slide-content-blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide-image-blog {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.slide-image-blog a img {
+  max-width: 100%;
+}
+
+.blog-card-slide-item {
+  max-width: 300px;
+  margin-bottom: 40px;
+  border: 1px solid rebeccapurple;
+ 
+  padding: 20px;
+  
+  
+}
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  .logo{
+    display: flex;
+    max-width: 500px;
+    height: auto;
+    margin-top: 230px;
+    margin-left: 100px;
+    align-items: center;
+    position: absolute;
    
-    font-family: poppins;
-    font-style: bold;
-    font-size: 30px;
-    color: rgb(37, 5, 75);
+}
+.brand-name{
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;;
     text-transform: uppercase;
-    justify-content: center;
-     margin-bottom: 0px;
-    max-height: 50px;
+    font-weight: 550;
+    
+    color: white;
+    white-space: normal;
+    
+    
+ 
+}
+.logo-wrap{
+    padding: 30px;
+    line-height: 0;
+}
+.slogan{
+    color: white;
 }
 .top_menu{
     
-   
-    justify-content: space-around;  
+   max-width: 300px;
+    justify-content: space-evenly;  
     border: solid 1px lightgrey;
+    margin-left: 930px;
 }
 
 
@@ -38,8 +133,12 @@ header{
 }
 
 .container{
-    max-width: 1130px;
-   justify-content: center;
+    max-width: 1310px;
+    justify-content: center;
+  
+}
+.row{
+  justify-content: center;
 }
 .btn{
     border-radius: 0%;
@@ -47,11 +146,13 @@ header{
 .fixed-bottom{
     position: fixed;
      bottom: 50px; 
-     right: 30px; 
+     right: 50px; 
      cursor: pointer; 
      transition: opacity 0.2s linear 0s, visibility; 
-     opacity: 1; 
-     visibility: visible;"
+     opacity: 0.5; 
+     visibility: visible;
+    max-width: 50px;
+    left: auto;
 }
 
 
@@ -77,14 +178,7 @@ header{
 h5{
     color: white;
 }
-.icon{
-    max-width: 180px;
-    display: flex;
-    border: 1px solid thistle;
-    justify-content: space-around;
-      
 
-}
 
 
  span{
@@ -93,3 +187,27 @@ h5{
      color: black;
      line-height: 10px;
  } 
+ .footer_bot{
+   background-color: black;
+   color: lightgrey;
+   font-size: 14px;
+   
+ }
+ ul li a{
+  text-transform: uppercase;
+  color: black;
+  font-size: 13px;
+  font-weight: 700;
+}
+li{
+  list-style-type: none;
+  line-height: 2rem;
+}
+ul{
+  padding: 0px;
+}
+
+
+  .nav-item-active a{
+color: green
+  }

@@ -19,25 +19,104 @@
         crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/nam.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+    <script src="./js/layout.js"></script>
+    <script src="./js/login.js"></script>
     <script src="https://kit.fontawesome.com/18d167862a.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
     <header>
         <div class="wrap">
-            <div class="logo">Tara Fashion</div>
 
-            <div class="top_menu  d-flex">
-                <div><a href="#"><i class="fas fa-cart-arrow-down" title="giỏ hàng"></i></a></div>
-                <div><a href="#"><i class="fas fa-user-plus" title="đăng nhập"></i></a></div>
-                <div><a href="#"><i class="fas fa-phone-volume" title="hot line"></i></a></div>
-                <div>0913587911</div>
+
+
+            <div class="logo">
+                <a href="#"> <img src="img/logo.jpg"></a>
+                <div class="logo-wrap">
+                    <h2 class="brand-name"><b>Tara Fashion</b></h2>
+                    <p class="slogan">fashion is the best style</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--popup login-->
+        <div class="login" id="login-box"><img src="">
+            <p class="title-log"><b> Đăng nhập</b></p>
+            <a class="close" href="#"><img class="img-close" title="close-window" alt="close" src="img/close.png"></a>
+            <form id="form-register" action="dangnhap.html" method="POST">
+                <label class="username">
+                    <span>tên hoặc email</span>
+                    <input id="username" type="text" autocomplete="on" name="username" placeholder="Username"
+                        value="" />
+                    <span id="username_error"></span>
+                </label>
+                <label class="password">
+                    <span>Mật khẩu</span>
+                    <input id="password" type="password" name="password" placeholder="Password" value="" />
+                    <span id="password_error"></span>
+                </label>
+                <a class="forgot" href="#">Quên mật khẩu?</a>
+                <button class="button submit-button" type="submit"
+                    style="margin:auto; margin-top: 25px; margin-bottom: 30px;">Đăng nhập</button>
+            </form>
+        </div>
+
+        <!--popup Modal register-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-header">
+                            <h3> ĐĂNG KÝ</h3>
+
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"></span>
+
+                            </button>
+                        </div>
+
+                        <form class="login-content" action="dangnhap.html" method="POST" id="user__signup">
+                            <label class="username"></label>
+
+                            <input id="signup__fullname" type="text" autocomplete="on" name="username"
+                                placeholder="Username" value="" />
+                            <p class="error">Vui lòng nhập tên đăng ký hợp lệ</p>
+
+                            <input id="signup__email" type="email" autocomplete="on" name="email address"
+                                placeholder="email" value="" />
+                            <p class="error">Vui lòng nhập Email hợp lệ</p>
+
+                            <input id="signup__password" type="password" autocomplete="on" name="password"
+                                placeholder="Password" value="" />
+                            <p class="error">Vui lòng nhập password hợp lệ</p>
+
+                            <input id="signup__match" type="password" autocomplete="on" name="password"
+                                placeholder="re-type-Password" value="" />
+                            <p class="error">Vui lòng nhập lại password như trên</p>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="user__signup">Đăng ký</button>
+                    </div>
+                </div>
             </div>
         </div>
 
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     </header>
     <!-- Menu -->
-    <nav class="navbar navbar-expand-lg bg navbar-dark" style="background-color:rgb(7, 46, 90);">
+    <nav class="navbar navbar-expand-lg bg navbar-white" style="background-color:rgb(187, 204, 228);">
         <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +128,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="nu.html">Thời trang nữ <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item-active">
                     <a class="nav-link" href="nam.html">Thời trang Nam</a>
                 </li>
 
@@ -66,6 +145,17 @@
             </form>
         </div>
     </nav>
+    <div class="top_menu  d-flex">
+        <div><a href="#"><i class="fas fa-cart-arrow-down" title="giỏ hàng"></i></a></div>
+        <div><a href="#"><i class="fas fa-user-plus" title="đăng nhập"></i></a></div>
+        <div><a href="#"><i class="fas fa-phone-volume" title="hot line"></i></a></div>
+        <div>0913587911</div>
+        <a class="login-window button" href="#login-box"> Đăng nhập</a>
+        <button type="button" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#exampleModal">
+            Đăng ký </button>
+
+
+    </div>
 
     <!--slide-->
     <section class="container">
@@ -88,7 +178,7 @@
 
             </div>
             <div class="col-lg-3">
-                <a href=""><img src="img/slide_boostrap/7.jpg" title=""></a>
+                <a href="product.html"><img src="img/slide_boostrap/7.jpg" title=""></a>
                 <div class="title">
 
                     <a href="product.html"><span><b> ELISE</b></span>
@@ -127,7 +217,7 @@
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Cowboy</h5>
                                 <p>Áo veston chất liệu len Anh<br><b>Giá: 1.800.000 VND</b></p>
-                               
+
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -148,7 +238,8 @@
                             <img class="d-block w-100" src="img/nam/a(5).jpg" alt="Second slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>H&M</h5>
-                                <p>Áo veston khoác demi chất dạ dày<br><b>Giá: 1.900.000 VND</b></p></p>
+                                <p>Áo veston khoác demi chất dạ dày<br><b>Giá: 1.900.000 VND</b></p>
+                                </p>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -212,7 +303,7 @@
             </div>
 
             <div class="col-lg-3">
-                <a href=""><img src="img/slide_boostrap/1.jpg" title=""></a>
+                <a href="product.html"><img src="img/slide_boostrap/1.jpg" title=""></a>
                 <div class="title">
                     <br>
                     <a href="product.html"><span><b> ELISE</b></span>
@@ -231,7 +322,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <a href=""><img src="img/slide_boostrap/2.jpg" title=""></a>
+                <a href="product.html"><img src="img/slide_boostrap/2.jpg" title=""></a>
                 <div class="title">
                     <br>
                     <a href="product.html"><span><b> ELISE</b></span>
@@ -250,7 +341,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <a href="#"><img src="img/slide_boostrap/3.jpg" title=""> </a>
+                <a href="product.html"><img src="img/slide_boostrap/3.jpg" title=""> </a>
                 <div class="title">
                     <br>
                     <a href="product.html"><span><b> ELISE</b></span>
@@ -276,7 +367,7 @@
                 <div class="list" style="max-width: 100%; background-color: rgb(10, 88, 88);">list</div>
             </div>
             <div class="col-lg-3">
-                <a href="#"><img src="img/slide_boostrap/4.jpg" title=""></a>
+                <a href="product.html"><img src="img/slide_boostrap/4.jpg" title=""></a>
                 <div class="title">
                     <br>
                     <a href="product.html"><span><b> ELISE</b></span>
@@ -295,7 +386,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <a href="#"><img src="img/slide_boostrap/5.jpg" title=""></a>
+                <a href="product.html"><img src="img/slide_boostrap/5.jpg" title=""></a>
                 <div class="title">
                     <br>
                     <a href="product.html"><span><b> ELISE</b></span>
@@ -314,7 +405,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <a href="#"><img src="img/slide_boostrap/6.jpg" title=""></a>
+                <a href="product.html"><img src="img/slide_boostrap/6.jpg" title=""></a>
                 <div class="title">
                     <br>
                     <a href="product.html"><span><b> ELISE</b></span>
@@ -342,11 +433,12 @@
 
 
     </section>
-    <div class="fixed-bottom" style="position: fixed; bottom: 50px; right: 30px; cursor: pointer; transition: opacity 0.2s linear 0s, visibility; opacity: 1; visibility: visible;">
-        <a href="index.html"><img src="img/up_pic.png"></a>
-            
-    
-        </div>
+    <div class="fixed-bottom">
+
+        <a href="nam.html"><img src="img/upkey.png"></a>
+
+
+    </div>
     <!--footer-->
     <footer>
         <div class="footer d-flex">
@@ -369,8 +461,9 @@
             <div class="service p-5">
                 <h5>dịch vụ khách hàng</h5>
                 <p><a href="#">Liên hệ với chúng tôi</a></p>
-                <p><a href="#">Số ĐT: 0913587011</a></p>
-                <p><a href="#">Điểm thưởng</a></p>
+                <p><a href="#" style="color: white; font-size: 14px;"><i class="fas fa-phone-volume"
+                            title="hot line"></i>&nbsp 0913587911</a></p>
+                <p><a href="#"><i class="far fa-envelope"></i>&nbsp songhqs@gmail.com</a></p>
                 <div class="icon">
                     <a href="facebook.com"><i class="fa fa-facebook"></i> </a>
                     <a href="twetter.com"><i class="fa fa-twitter"></i> </a>
@@ -390,3 +483,7 @@
 
         </div>
     </footer>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

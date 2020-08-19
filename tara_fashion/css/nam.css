@@ -6,7 +6,7 @@
 }
 .carousel-caption{
     background: rgba(117, 190, 218, 0.5);
-    max-height: 110px;
+    max-height: 120px;
 }
 body{
 
@@ -15,11 +15,11 @@ body{
 }
 .navbar{
     text-transform: uppercase;
-    background-color: rgb(43, 51, 126);
+    background-color: white;
 }
 .top_menu{
     display: flex;
-    max-width: 250px;
+    max-width: 650px;
     justify-content: space-around;
     margin-left: 930px;
     border: solid 1px lightgrey;
@@ -27,15 +27,54 @@ body{
 }
 header{
     max-width: 1400px;
-    background-image: url("../img/anh_banner.jpg");
-    height: 504px;
-    
+    background-image: url("../img/benner-nho.jpg");
+    height: 422px;
+    position: relative;
     margin: auto;
 }
+.nav-item-active a{
+    color:green
+      }
+    
+      .logo{
+        display: flex;
+        max-width: 500px;
+        height: auto;
+        margin-top: 230px;
+        margin-left: 100px;
+        align-items: center;
+       position: absolute;
+    }
+    .brand-name{
+        font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;;
+        text-transform: uppercase;
+        font-weight: 550;
+        
+        color: white;
+        white-space: normal;
+        
+        
+     
+    }
+    .logo-wrap{
+        padding: 30px;
+        line-height: 0;
+    }
+    .slogan{
+        color: white;
+    }
+    .top_menu{
+        
+       max-width: 300px;
+        justify-content: space-evenly;  
+        border: solid 1px lightgrey;
+    }
+    
 ul li a{
     text-transform: uppercase;
     color: black;
     font-size: 14px;
+    font-weight: 700;
 }
 li{
     list-style-type: none;
@@ -78,9 +117,20 @@ span{
     font-size: 14px;
     color: black;
 }
-.fixed {
+
+input::-moz-progress-bar {
+    max-width: 400px;
+}
+
+
+.fixed-bottom{
     position: fixed;
-    top: 100vh;
-    margin-left: 1350px;
-    
- }
+     bottom: 50px; 
+     right: 50px; 
+     cursor: pointer; 
+     transition: opacity 0.2s linear 0s, visibility; 
+     opacity: 0.5; 
+     visibility: visible;
+    max-width: 50px;
+    left: auto;
+}

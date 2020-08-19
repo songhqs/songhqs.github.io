@@ -1,10 +1,11 @@
-.navbar{
-    text-transform: uppercase;
-    background-color: rgb(43, 51, 126);
-    font-size: small;
-    
 
+ ul li a{
+     text-transform: uppercase;
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
 }
+
 .top_menu{
     display: flex;
     max-width: 250px;
@@ -14,19 +15,12 @@
     align-items: center;
 }
 
-.detail{
-    
-    margin-bottom: 30px;
-    border: solid 1px blue
-}
+
 body{
     margin: auto;
     max-width: 1400px;
 }
-.container{
-    margin: auto;
-    
-}
+
 .col-m-2{
     
     justify-content: center;
@@ -34,19 +28,11 @@ body{
 .col-m-6{
        padding: 1rem;
 }
-.col-m-4{
-    max-width: 33%;
-}
 
-.detail{
+
     
-    margin-bottom: 1.5rem;
-    
-}
-.container-right{
-   
-    padding: 0rem;
-}
+
+
 
 
 .btn{
@@ -63,17 +49,57 @@ body{
 }
 header{
     max-width: 1400px;
-    background-image: url("../img/modern-flowing-blue.jpg");
-    height: 286px;
-    
+    background-image: url("../img/benner-nho.jpg");
+    height: 422px;
+    position: relative;
     margin: auto;
 }
+.logo{
+    display: flex;
+    max-width: 500px;
+    height: auto;
+    
+    margin-left: 100px;
+    align-items: center;
+   margin-top: 230px;
+    position: absolute;
+   
+}
+.brand-name{
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;;
+    text-transform: uppercase;
+    font-weight: 550;
+    
+    color: white;
+    white-space: normal;
+    
+    
+ 
+}
+.logo-wrap{
+    padding: 30px;
+    line-height: 0;
+}
+.slogan{
+    color: white;
+}
+.top_menu{
+    
+   max-width: 300px;
+    justify-content: space-evenly;  
+    border: solid 1px lightgrey;
+}
+
 .footer{
     margin-top: 2rem;
     background-color: rgb(17, 73, 70);
     justify-content: space-evenly;
     
 }
+.nav-item-active a{
+    color:green
+      }
+    
 .footer p a{
     color: white;
     text-transform: uppercase;
@@ -101,9 +127,45 @@ span{
     color: black;
     line-height: 10px;
 }
-.fixed {
+.fixed-bottom{
     position: fixed;
-    top: 100vh;
-    margin-left: 1350px;
-    
+     bottom: 50px; 
+     right: 50px; 
+     cursor: pointer; 
+     transition: opacity 0.2s linear 0s, visibility; 
+     opacity: 0.5; 
+     visibility: visible;
+    max-width: 50px;
+    left: auto;
+}
+ img{
+     max-width: fit-content;
  }
+ #slider{
+    margin: 0px auto;
+    max-width: 100%;    
+    
+    border: 1px #c20b0b solid;
+    position: relative;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+
+}
+#prev{
+    text-transform: uppercase;
+    left: 30px;
+    top: 300px;
+    position: absolute;
+}
+#next{
+    text-transform: uppercase;
+    right: 30px;
+    top: 300px;
+    position: absolute;
+}
+img{
+    max-width: 100%;
+}
+.thumb-1, .thumb-2, .thumb-3, .thumb-4{
+    margin-bottom: 30px;
+}

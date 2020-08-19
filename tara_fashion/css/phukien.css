@@ -5,7 +5,7 @@ body{
 }
 .navbar{
     text-transform: uppercase;
-    background-color:rgb(43, 51, 126);
+    background-color:rgb(208, 211, 235);
 }
 .top_menu{
     display: flex;
@@ -17,10 +17,48 @@ body{
 }
 header{
     max-width: 1400px;
-    background-image: url("../img/modern-flowing-blue.jpg");
-    height: 286px;
+    background-image: url("../img/benner-nho.jpg");
+    height: 422px;
     margin: auto;
 }
+.nav-item-active a{
+    color:green
+      }
+    
+      .logo{
+        display: flex;
+        max-width: 500px;
+        height: auto;
+        margin-top: 230px;
+        margin-left: 100px;
+        align-items: center;
+       
+    }
+    .brand-name{
+        font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;;
+        text-transform: uppercase;
+        font-weight: 550;
+        
+        color: white;
+        white-space: normal;
+        
+        
+     
+    }
+    .logo-wrap{
+        padding: 30px;
+        line-height: 0;
+    }
+    .slogan{
+        color: white;
+    }
+    .top_menu{
+        
+       max-width: 300px;
+        justify-content: space-evenly;  
+        border: solid 1px lightgrey;
+    }
+    
 .footer{
     margin-top: 2rem;
     background-color: rgb(17, 73, 70);
@@ -56,9 +94,28 @@ span{
     color: black;
 }
 
-.fixed {
+.fixed-bottom{
     position: fixed;
-    top: 100vh;
-    margin-left: 1350px;
-    
- }
+     bottom: 50px; 
+     right: 50px; 
+     cursor: pointer; 
+     transition: opacity 0.2s linear 0s, visibility; 
+     opacity: 0.5; 
+     visibility: visible;
+    max-width: 27px;
+   left: auto;
+    max-width: 50px;
+}
+ul li a{
+    text-transform: uppercase;
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  li{
+    list-style-type: none;
+    line-height: 2rem;
+  }
+  ul{
+    padding: 0px;
+  }
