@@ -51,6 +51,9 @@ body{
 .navbar{
     text-transform: uppercase;
     background-color: rgb(239, 239, 245);
+    position: sticky;
+    top: 0px;
+    z-index: 999;
    
 }
 .top_menu{
@@ -67,6 +70,7 @@ header{
     height: 422px;
     margin: auto;
     position: relative;
+    background-attachment: fixed;
     
    
 }

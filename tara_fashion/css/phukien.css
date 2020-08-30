@@ -6,6 +6,9 @@ body{
 .navbar{
     text-transform: uppercase;
     background-color:rgb(208, 211, 235);
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 }
 .top_menu{
     display: flex;
@@ -20,6 +23,8 @@ header{
     background-image: url("../img/benner-nho.jpg");
     height: 422px;
     margin: auto;
+    position: relative;
+    background-attachment: fixed;
 }
 .nav-item-active a{
     color:green
@@ -32,6 +37,7 @@ header{
         margin-top: 230px;
         margin-left: 100px;
         align-items: center;
+        position: absolute;
        
     }
     .brand-name{

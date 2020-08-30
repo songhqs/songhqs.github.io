@@ -6,9 +6,16 @@ body{
     
 }
 header{
+  max-width: 1400px;
   background-image: url("../img/benner-nho.jpg");
   height: 422px;
+  
+  margin: auto;
   position: relative;
+  background-attachment: fixed;
+  
+  
+  
   
 }
 
@@ -97,7 +104,7 @@ span.titles-blog {
     margin-top: 230px;
     margin-left: 100px;
     align-items: center;
-    position: absolute;
+    
    
 }
 .brand-name{
@@ -130,6 +137,9 @@ span.titles-blog {
 .navbar{
     text-transform: uppercase;
     background-color: rgb(43, 51, 126);
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 }
 
 .container{
@@ -211,3 +221,7 @@ ul{
   .nav-item-active a{
 color: green
   }
+.img :hover{
+  border: o.5px solid purple;
+  
+}

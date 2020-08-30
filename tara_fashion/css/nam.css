@@ -16,6 +16,9 @@ body{
 .navbar{
     text-transform: uppercase;
     background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 }
 .top_menu{
     display: flex;
@@ -31,6 +34,7 @@ header{
     height: 422px;
     position: relative;
     margin: auto;
+    background-attachment: fixed;
 }
 .nav-item-active a{
     color:green
