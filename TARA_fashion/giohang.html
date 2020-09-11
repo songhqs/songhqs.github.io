@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        .table {
+            margin: auto;
+            line-height: 2rem;
+
+
+        }
+
+        form {
+
+            max-width: 400px;
+            height: auto;
+            top: 200px;
+
+
+        }
+
+        input {
+            max-width: 300px;
+            line-height: 2rem;
+        }
+
+        th {
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center;">List Items</h1>
+    <button type="button" onclick="" value="Add list">Add List</button>
+
+    <br>
+
+    ><table border="1" class="table">
+        <tr>
+            <th>ID</th>
+            <th>Họ và tên</th>
+            <th>Ngày tháng năm sinh</th>
+            <th>Giới tính</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <td>Xoa </td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Trần Văn An</td>
+            <td>23/06/1999</td>
+            <td>Nam</td>
+            <td>email@gmail.com</td>
+            <td>0913557977</td>
+            <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                xoá
+              </button></td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Nguyễn thu Hà </td>
+            <td>15/07/2001</td>
+            <td>Nữ</td>
+            <td>thuha@gmail.com</td>
+            <td>0123334443</td>
+            <td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                xoá
+              </button></td>
+        </tr>
+    </table>
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="wrap">
+
+     <form id="list_item" method="post" action="giohang.html">
+        <input id="number" placeholder="id" type="number">
+        <input type="text" placeholder="Ho tên">
+        <input type="date" placeholder="ngày/thang/nam">
+        <input type="gender" placeholder="male/female">
+        <input type="email" placeholder="add email">
+        <input type="number" placeholder="số diện thoại">
+        <input type="submit" name="submit" value="submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
