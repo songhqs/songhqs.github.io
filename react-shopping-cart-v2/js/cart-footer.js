@@ -1,8 +1,7 @@
 function CartFooter(props) {
-  const products=props.products;
-  let subTotal=products[0].price*products[0].quantity+products[1].price*products[1].quantity;
-  let tax=subTotal*0.1;
-  let total=subTotal+tax;
+
+  
+ 
   return (
     <section className="container">
       <div className="promotion">
@@ -15,7 +14,7 @@ function CartFooter(props) {
             Subtotal <span>${subTotal}</span>
           </li>
           <li>
-            Tax <span>${subTotal /10}</span>
+            Tax <span>${tax}</span>
           </li>
           <li className="total">
             Total <span>${subTotal + tax}</span>

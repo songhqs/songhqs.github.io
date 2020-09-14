@@ -18,10 +18,16 @@ const PRODUCTS = [
 ];
 
 // Tính lại dựa vào PRODUCTS ở trên
-const numberItems = 0;
-const subTotal = 0;
-const tax = 0;  // Thuế = 10% subTotal
+const taxPercent = 0.1;
+let numberItems = 0;
+let subTotal = 0;
+// Thuế = 10% subTotal
 
+for (let i = 0; i < PRODUCTS.length; i++) {
+  subTotal += PRODUCTS[i].price * PRODUCTS[i].quantity;
+  numberItems += PRODUCTS[i].quantity;
+}
+let tax = subTotal * taxPercent;
 
 ReactDOM.render(
   <main>
@@ -29,7 +35,7 @@ ReactDOM.render(
 
     <CartBody products={PRODUCTS} />
 
-    <CartFooter subTotal={subTotal} tax={tax}/>
+    <CartFooter subTotal={subTotal} tax={tax} />
   </main>,
   document.getElementById("root")
 );
